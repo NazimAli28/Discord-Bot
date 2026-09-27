@@ -1,0 +1,308 @@
+/* Shared Discord dark-theme mockup styling */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #313338;
+  font-family: "gg sans", "Noto Sans", Helvetica, Arial, sans-serif;
+  color: #dbdee1;
+  width: 1000px;
+}
+
+.app {
+  width: 1000px;
+  background: #313338;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Slim channel header */
+.channel-header {
+  height: 48px;
+  min-height: 48px;
+  background: #313338;
+  border-bottom: 1px solid #26282c;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+.channel-header .hash {
+  color: #80848e;
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.channel-header .name {
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.channel-header .divider {
+  width: 1px;
+  height: 24px;
+  background: #3f4248;
+  margin: 0 12px;
+}
+
+.channel-header .topic {
+  color: #949ba4;
+  font-size: 13px;
+}
+
+/* Message list */
+.messages {
+  padding: 16px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-group {
+  display: flex;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+.msg-group:hover {
+  background: transparent;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: none;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "gg sans", sans-serif;
+}
+
+.msg-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.msg-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bot-tag {
+  background: #5865f2;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 3px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #949ba4;
+  font-weight: 500;
+}
+
+.slash-used {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #949ba4;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.slash-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: #5865f2;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slash-cmd {
+  color: #dbdee1;
+  font-weight: 500;
+}
+
+.msg-text {
+  font-size: 15px;
+  line-height: 1.375rem;
+  color: #dbdee1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.msg-text b, .msg-text strong {
+  font-weight: 700;
+  color: #f2f3f5;
+}
+
+.mention {
+  background: rgba(88,101,242,0.3);
+  color: #c9cdfb;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.ephemeral-tag {
+  color: #949ba4;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.only-you {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #949ba4;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.only-you svg { width: 12px; height: 12px; }
+
+/* Code block */
+.code-block {
+  background: #2b2d31;
+  border: 1px solid #1e1f22;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.3rem;
+  color: #dbdee1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 4px;
+}
+
+/* Embed-like left bar container (not used for embeds since bot uses plain text, but kept for select/component container) */
+.component-container {
+  margin-top: 8px;
+  max-width: 480px;
+}
+
+.select-box {
+  background: #2b2d31;
+  border: 1px solid #1e1f22;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #949ba4;
+  cursor: default;
+}
+
+.select-box.disabled {
+  opacity: 0.6;
+}
+
+.select-box .chevron {
+  color: #949ba4;
+  font-size: 12px;
+}
+
+.select-dropdown {
+  margin-top: 4px;
+  background: #2b2d31;
+  border: 1px solid #1e1f22;
+  border-radius: 8px;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+.select-option {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #dbdee1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-option:hover, .select-option.highlight {
+  background: #3f4248;
+}
+
+.select-option .check {
+  color: #23a55a;
+  font-size: 13px;
+}
+
+/* Attachment card */
+.attachment-card {
+  margin-top: 8px;
+  max-width: 420px;
+  background: #2b2d31;
+  border: 1px solid #1e1f22;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attachment-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #4e5058;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dbdee1;
+  font-size: 16px;
+  flex: none;
+}
+
+.attachment-meta .fname {
+  font-size: 14px;
+  color: #00a8fc;
+}
+
+.attachment-meta .fsize {
+  font-size: 12px;
+  color: #949ba4;
+}
+
+.section-gap {
+  height: 4px;
+}
+
+/* Avatar colors */
+.av-alex { background: #e07a3f; }
+.av-sara { background: #2f9e6e; }
+.av-bot  { background: #5865f2; }
+
+.uname-alex { color: #f2b88b; }
+.uname-sara { color: #7bdbb0; }
+.uname-bot  { color: #a7b2ff; }
+

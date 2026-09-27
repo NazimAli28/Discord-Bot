@@ -1,0 +1,19 @@
+# Secrets
+credentials.env
+.env
+
+# Local data
+database/
+*.db
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>order-move</title>
+<link rel="stylesheet" href="discord.css">
+</head>
+<body>
+<div class="app">
+  <div class="channel-header">
+    <span class="hash">#</span>
+    <span class="name">orders</span>
+    <span class="divider"></span>
+    <span class="topic">Order tracking &amp; team reminders — Demo Workspace</span>
+  </div>
+
+  <div class="messages">
+
+    <!-- /order_move -->
+    <div class="msg-group">
+      <div class="avatar av-sara">SL</div>
+      <div class="msg-body">
+        <div class="slash-used">
+          <span class="slash-icon">/</span>
+          <span class="uname-sara username">sara.lee</span> used
+          <span class="slash-cmd">/order_move</span>
+          <span class="timestamp">Today at 11:02 AM</span>
+        </div>
+        <div class="msg-header">
+          <span class="uname-bot username">OpsBot</span>
+          <span class="bot-tag">APP</span>
+        </div>
+        <div class="msg-text">Order # <b>10482</b> from list <b>In Progress</b> is selected:</div>
+
+        <div class="component-container">
+          <div class="select-box">
+            <span>Choose a target list...</span>
+            <span class="chevron">&#9660;</span>
+          </div>
+          <div class="select-dropdown">
+            <div class="select-option highlight"><span>New Orders</span></div>
+            <div class="select-option"><span>In Review</span></div>
+            <div class="select-option"><span>Completed</span></div>
+          </div>
+        </div>
+
+        <div class="only-you">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 3C4.5 3 1.7 5.1 0.5 8c1.2 2.9 4 5 7.5 5s6.3-2.1 7.5-5C14.3 5.1 11.5 3 8 3zm0 8.3A3.3 3.3 0 1 1 8 4.7a3.3 3.3 0 0 1 0 6.6zm0-5.3a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          Only you can see this
+        </div>
+      </div>
+    </div>
+
+    <!-- public success message after selection -->
+    <div class="msg-group">
+      <div class="avatar av-bot">OB</div>
+      <div class="msg-body">
+        <div class="msg-header">
+          <span class="uname-bot username">OpsBot</span>
+          <span class="bot-tag">APP</span>
+          <span class="timestamp">Today at 11:02 AM</span>
+        </div>
+        <div class="msg-text"><b>Order #10482 - Aria Table Lamp</b> moved from <b>In Progress</b> to <b>In Review</b>.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
