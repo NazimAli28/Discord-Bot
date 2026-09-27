@@ -426,7 +426,7 @@ async def set_order_due_date(interaction: discord.Interaction, order_num: int, d
 
         # Call the function from trello_commands to set the due date
         if set_order_due_date_in_trello(order_num, due_datetime):
-            await interaction.followup.send(f"Due date for order **# {order_num}** has been set to **{due_datetime.strftime('%d %b %Y %H:%M')}** PST.")
+            await interaction.followup.send(f"Due date for order **# {order_num}** has been set to **{due_datetime.strftime('%d %b %Y %H:%M')}** PKT.")
         else:
             await interaction.followup.send(f"Failed to set due date for order **# {order_num}**.")
     
